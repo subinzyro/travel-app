@@ -8,18 +8,29 @@ from travelapp.forms import TravelForm
 def home(request):
     return render (request,"home.html")
 
-def reg(request):
+def login(request):
     if request.method == "POST":
         form = TravelForm(request.POST) 
         if form.is_valid():
-            try:
-                form.save()
-                return redirect('/home')
-            except:
-                pass
+            
+            form.save()
+            return redirect('/home')
+            
     else:
         form = TravelForm()
     return render(request,'login.html',{'form':form})
 
 def book(request):
     pass
+
+def register(request):
+    if request.method == "POST":
+        form = TravelForm(request.POST) 
+        if form.is_valid():
+            
+            form.save()
+            return redirect('/home')
+            
+    else:
+        form = TravelForm()
+    return render(request,'login.html',{'form':form})

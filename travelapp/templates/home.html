@@ -4,8 +4,432 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/travel.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#imgbutton1").click(function(){
+          $("#click1").toggle();
+        });
+      });
+      $(document).ready(function(){
+        $("#imgbutton2").click(function(){
+          $("#click2").toggle();
+        });
+      });
+      $(document).ready(function(){
+        $("#imgbutton3").click(function(){
+          $("#click3").toggle();
+        });
+      });
+      $(document).ready(function(){
+        $("#imgbutton4").click(function(){
+          $("#click4").toggle();
+        });
+      });
+      </script>
+      
 </head>
 <body>
-    <p>hshwqhhwq</p>
+
+
+<!-- -------------------navbar------------------------ -->
+
+
+  <section class="firstnavbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div id="navdiv" class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" fill="currentColor">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><svg style="margin-bottom: 5px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>Agent Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><svg style="margin-bottom: 5px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>Customer Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html"><svg style="margin-bottom: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+                  <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15zM11 2h.5a.5.5 0 0 1 .5.5V15h-1zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+                </svg>Not a Member?<span style="color: green;">Register</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">call up now:815-584-657</a>
+              </li>
+            </ul>
+            <ul id="socialmedia" class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"/>
+                </svg></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z"/>
+                </svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+      <!-- -------------------navbar------------------------ -->
+
+      <!-- -------------------navbar2------------------------ -->
+
+    <section class="secondnavbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a id="voyage" class="navbar-brand" href="#">V<span style="color:rgb(7, 241, 132);">O</span>YAGE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="secondnov" class="navbar-nav me-auto mb-2 mb-lg-0 " >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">DESTINSTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CRUISES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SPECIALS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOLIDAYS</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+            </ul>
+            <form id="firstsearch" class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+      <!-- -------------------navbar2------------------------ -->
+
+      <!-- ----------------------image sliding--------------------- -->
+
+
+    <section class="slideimage">
+      <div  id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="slideimage" src="/static/img/disney.jpg" class="d-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img id="slideimage" src="/static/img/lake1.png" class="d-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img id="slideimage" src="/static/img/paris.jpg" class="d-block w-100" alt="...">
+           
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div id="traveldiv" class="carousel-caption  d-md-block">
+          <h4 style=" text-shadow: 2px 2px 5px  black;">TO TRAVEL IS TO LIVE</h4>
+          <p>You Dont't Need Magic to Disappear. All You Need Is A Destination.</p>
+          <button id="mapbutton" type="button">SHOW ON THE MAP </button>
+          <button id="infobutton" type="button"> MORE INFO </button>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- /* ----------image sliding---------- */ -->
+
+    <!-- ----------------search bottom------------ -->
+
+
+    <section class="searchbutton">
+      <div id="searchbox">
+        <div><p>FIND YOUR <br><span style="font: bolder;">HOLIDAYS</span></p></div>
+        <div id="place"><label for="placesearch">WHERE </label>
+        <input type="search" id="placesearch" placeholder="Destination">
+        <label for="dateadd">WHEN </label>
+        <input type="date" id="dateadd" placeholder="Select Date" ></div>
+        <button>
+          <span class="text">SEARCH</span>
+        </button>
+      </div>
+
+    </section>
+
+
+
+    <!-- ----------------search bottom------------ -->
+
+    <!-- ---------------------cards--------------------- -->
+
+
+        <!-- ---------------------cards--------------------- -->
+
+
+ <section class="linecards">
+<div class="blurimg container-fluid">
+  <div class="offers" >
+    <h4>SPECIAL OFFERS</h4>
+    <p>Best 2023 Packages Where People Love TO Stay!</p>
+
+  </div> 
+  <div id="linecardid">      
+        <div id="cardhover" class="card" style="width: 18rem;">
+          <img src="/static/img/statueofliberty.jpg" class="card-img-top" alt="Statue Of Liberty.">
+          <div class="card-body">
+            <h5>STATUE OF LIBERTY <svg id="imgbutton1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" style="margin-left: 30px;" class="bi bi-caret-down" viewBox="0 0 16 16">
+              <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+            </svg></h5>
+            <p class="card-text" id="click1"> "The Statue of Liberty Enlightening the World" was a gift of friendship from the people of France to the United States and is recognized as a universal symbol of freedom and democracy. </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/static/img/eiffeltower.webp" class="card-img-top" alt="Eiffel Tower.">
+          <div class="card-body">
+            <h5>EIFFEL TOWER <svg id="imgbutton2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" style="margin-left: 80px;" class="bi bi-caret-down" viewBox="0 0 16 16">
+              <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+            </svg></h5>
+            <p class="card-text" id="click2"> A symbol of Paris and more generally of France, the Eiffel Tower, built by Gustave Eiffel for the 1889 World’s Fair, is one of the world’s most visited monuments. </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/static/img/arizona.jpg" class="card-img-top" alt="Arizona.">
+          <div class="card-body">
+            <h5>ARIZONA <svg id="imgbutton3" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" style="margin-left: 120px;" class="bi bi-caret-down" viewBox="0 0 16 16">
+              <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+            </svg></h5>
+            <p class="card-text" id="click3"> The San Francisco Mountains are located in north-central Arizona and are beautiful mountains. This is a volcanic mountain range, located just north of Flagstaff, AZ. Known locally as “The Peaks,” .</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/static/img/venice.jpg" class="card-img-top" alt="Venice.">
+          <div class="card-body">
+            <h5>VENICE <svg id="imgbutton4" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" style="margin-left: 140px;" class="bi bi-caret-down" viewBox="0 0 16 16">
+              <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+            </svg></h5>
+            <p class="card-text" id="click4"> Venice, known also as the “City of Canals,” “The Floating City,” and “Serenissima,” is arguably one of Italy's most picturesque cities. With its winding canals, striking architecture, and beautiful bridges. </p>
+          </div>
+        </div>
+  </div>    
+</div>    
+ </section>
+
+    <!-- ---------------------cards--------------------- -->
+
+    <!-- ---------------------bottom icon---------------------- -->
+
+    <section>
+      <div class="container-fluid navbar  bg-body-tertiary" id="bottomicon">
+        <div class="iconhead">
+        <h4>HOLIDAYS TYPE</h4>
+        <p>let explore your dream to travel the world!</p><br>
+       </div>
+      <div class="bluricon">
+        <div class="cruise">
+        <svg id="bottomicon1" xmlns="http://www.w3.org/2000/svg" height="120" width="120" fill="currentColor"  viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M192 32c0-17.7 14.3-32 32-32H352c17.7 0 32 14.3 32 32V64h48c26.5 0 48 21.5 48 48V240l44.4 14.8c23.1 7.7 29.5 37.5 11.5 53.9l-101 92.6c-16.2 9.4-34.7 15.1-50.9 15.1c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-16.2 0-34.7-5.7-50.9-15.1l-101-92.6c-18-16.5-11.6-46.2 11.5-53.9L96 240V112c0-26.5 21.5-48 48-48h48V32zM160 218.7l107.8-35.9c13.1-4.4 27.3-4.4 40.5 0L416 218.7V128H160v90.7zM306.5 421.9C329 437.4 356.5 448 384 448c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 501.7 417 512 384 512c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 437.2 165.1 448 192 448c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z"/></svg>
+        <p>Cruise</p>
+      </div>
+      <div class="cruise">
+        <svg id="bottomicon1" xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-tree-fill" viewBox="0 0 16 16">
+          <path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5z"/>
+        </svg>
+        <p>Nature</p>
+      </div>
+      <div class="cruise">
+        <svg id="bottomicon1" xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+          <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849"/>
+        </svg>
+          <p>Flight</p>
+      </div>
+        <div class="cruise">
+        <svg id="bottomicon1" xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-compass-fill" viewBox="0 0 16 16">
+          <path d="M15.5 8.516a7.5 7.5 0 1 1-9.462-7.24A1 1 0 0 1 7 0h2a1 1 0 0 1 .962 1.276 7.503 7.503 0 0 1 5.538 7.24m-3.61-3.905L6.94 7.439 4.11 12.39l4.95-2.828 2.828-4.95z"/>
+        </svg>
+        <p class="adventure">Adventure</p>
+      </div>
+        <div class="cruise">
+        <svg id="bottomicon1" xmlns="http://www.w3.org/2000/svg" height="120" width="120" fill="currentColor" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M346.3 271.8l-60.1-21.9L214 448H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H544c17.7 0 32-14.3 32-32s-14.3-32-32-32H282.1l64.1-176.2zm121.1-.2l-3.3 9.1 67.7 24.6c18.1 6.6 38-4.2 39.6-23.4c6.5-78.5-23.9-155.5-80.8-208.5c2 8 3.2 16.3 3.4 24.8l.2 6c1.8 57-7.3 113.8-26.8 167.4zM462 99.1c-1.1-34.4-22.5-64.8-54.4-77.4c-.9-.4-1.9-.7-2.8-1.1c-33-11.7-69.8-2.4-93.1 23.8l-4 4.5C272.4 88.3 245 134.2 226.8 184l-3.3 9.1L434 269.7l3.3-9.1c18.1-49.8 26.6-102.5 24.9-155.5l-.2-6zM107.2 112.9c-11.1 15.7-2.8 36.8 15.3 43.4l71 25.8 3.3-9.1c19.5-53.6 49.1-103 87.1-145.5l4-4.5c6.2-6.9 13.1-13 20.5-18.2c-79.6 2.5-154.7 42.2-201.2 108z"/></svg>
+        <p>Beach</p>
+      </div>
+        <div class="cruise">
+        <svg id="bottomicon1" xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-hearts" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.931.481c1.627-1.671 5.692 1.254 0 5.015-5.692-3.76-1.626-6.686 0-5.015Zm6.84 1.794c1.084-1.114 3.795.836 0 3.343-3.795-2.507-1.084-4.457 0-3.343ZM7.84 7.642c2.71-2.786 9.486 2.09 0 8.358-9.487-6.268-2.71-11.144 0-8.358Z"/>
+        </svg>
+        <p class="honeymoon">Honeymoon</p>
+      </div>
+      </div>
+      <!-- <div id="iconcap">
+        <p id="cruise">Cruise</p>
+        <p id="nature">Nature</p>
+        <p id="flight">Flight</p>
+        <p id="adventure">Adventure</p>
+        <p id="beach">Beach</p>
+        <p id="honeymoon">Honeymoon</p>
+      </div> -->
+      </div>
+
+    </section>
+
+
+      <!-- ---------------------bottom icon---------------------- -->
+
+ <!-- ---------------comment------------------- -->
+
+ <section>
+<div id="megbox" class="navbar navbar-expand-lg bg-body-tertiary" contenteditable="" >
+  <div>
+    <blockquote id="megbox1" class="bubble bubble-bottom-left" >
+      <p>When will Apple release a MacBook Air 15" with Retina?</p>
+      <cite>John Doe - Developer</cite>
+    </blockquote>
+  </div>
+  <div>
+    <blockquote  id="megbox1" class="bubble bubble-bottom-left" >
+      <p>When will Apple release a MacBook Air 15" with Retina?</p>
+      <cite>John Doe - Developer</cite>
+    </blockquote>
+  </div>
+  <div>
+    <blockquote id="megbox1"  class="bubble bubble-bottom-left" >
+      <p>When will Apple release a MacBook Air 15" with Retina?</p>
+      <cite>John Doe - Developer</cite>
+    </blockquote>
+  </div>
+  <div>
+    <blockquote  id="megbox1"  class="bubble bubble-bottom-left" >
+      <p>When will Apple release a MacBook Air 15" with Retina?</p>
+      <cite>John Doe - Developer</cite>
+    </blockquote>
+  </div>
+</div>
+ </section>
+
+
+
+ <!-- ---------------comment------------------- -->
+
+
+ <!-- ---------------------footer---------------------- -->
+
+<section>
+<footer id="footer">
+  <div id="footer1">
+    <h4>NEWSLETTER</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deleniti architecto itaque. </p>
+    
+  </div>
+  <div id="footer2">
+    <h4>LATEST NEWS</h4>
+    <img src="/static/img/GaoliangBridge.jpg" alt="...">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+  <div id="footer3">
+    <h4>TAGS</h4>
+    <p><span> Agent login </span><span> tags </span><span> scene </span><span> not a member </span><span> landscape </span></p>
+  </div>
+  <div id="footer4">
+    <h4>ADDRESS</h4>
+    <p>Established in 2009. 20 Wenlock Road, London N1</p>
+    <p><span>e-mail : </span>voyage123@gmail.com</p><br>
+    <div id="footer4icon">
+    <ul  class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+        </svg></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"/>
+        </svg></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </svg></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z"/>
+        </svg></a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</footer>
+</section>
+
+
+
+ <!-- ---------------------footer---------------------- -->
+
+
+ <!-- /* -----------------------footer2---------------------- */ -->
+
+<footer>
+  <div>
+    <div id="footer5">
+      <p><span>HOME :: </span>DESTINATIONS :: CRUISES :: SPECIALS :: HOLIDAYS :: BLOG </p><br>
+      <p id="p">Copyright @Voyage All Rights Reserved</p>
+    </div>
+  </div>
+
+
+</footer>
+
+
+
+
+  <!-- /* -----------------------footer2---------------------- */ -->
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+
 </body>
 </html>

@@ -1,0 +1,457 @@
+/* #firstnav{
+    color: white;
+    background-color: rgb(26, 26, 65);
+} */
+
+/* ----------navbar---------- */
+
+#navdiv{
+    
+    background-color: rgb(26, 26, 65);
+   
+    margin-top: -10px;
+    padding-left: 2%;
+}
+#navdiv a{
+    color: white;
+    
+}
+#navdiv button{
+    color: white;
+    background-color: white;
+}
+
+/* ----------navbar---------- */
+
+/* ----------navbar2---------- */
+
+
+#socialmedia{
+    padding-left: 20%;
+}
+#secondnov{
+    padding-left: 25%;
+}
+#firstsearch input{
+    height: 35px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+#firstsearch button{
+    height: 40px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 12px;
+    
+    
+}
+#voyage{
+    padding-left: 10%;
+    font-weight: bolder;
+    font-size: xx-large;
+    
+}
+
+/* ----------navbar2---------- */
+
+/* ----------image sliding---------- */
+
+#slideimage {
+    height: 600px;
+    width: 100%;
+}
+#mapbutton{
+    background-color: rgb(116, 116, 230);
+}
+#traveldiv{
+    padding-bottom: 10%;
+}
+#traveldiv h4 p{
+    
+    font: bolder;
+   
+}
+#infobutton{
+    background: transparent;
+    background-color:white;
+    opacity: 0.5;
+    
+   
+}
+#infobutton:hover{
+    background-color: rgb(116, 116, 230);
+}
+
+/* ----------image sliding---------- */
+
+/* <!-- ----------------search bottom------------ --> */
+
+.searchbutton{
+    border-radius: 10px;
+    background-color: #cabfbf6b;
+    color: rgb(0, 0, 0);
+}
+#searchbox{
+    display: flex;
+    /* padding-left: 350px; */
+    justify-content: center;
+   
+}
+#place label,input{
+    align-items: baseline;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+#searchbox p{
+    padding-top: 10px;
+}
+ .searchbutton button {
+    align-items: center;
+    /* background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); */
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    width: 100px;
+    height: 35px;
+    max-width: 100%;
+    min-width: 100px;
+    padding: 5px;
+    
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    margin-left: 5px;
+   }
+   
+   .searchbutton button:active,
+   button:hover {
+    outline: 0;
+   }
+   
+   .searchbutton   span.text {
+    background-color: rgb(5, 6, 45);
+    padding: 5px 2px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+   }
+   
+   .searchbutton  button:hover span {
+    background: green;
+   }
+   
+ .searchbutton  button:active {
+    transform: scale(0.9);
+   }
+   
+/* <!-- ----------------search bottom------------ --> */ 
+
+/* -----------------cards------------------- */
+
+.offers{
+    text-align: center;
+    height: 100%;
+    background-color: white;
+   
+    
+}
+.bluring{
+    background-color: white;
+    height: 100%;
+    position: fixed;
+}
+#linecardid{
+   height: 20%;
+   justify-content: center ;
+   /* position: absolute; */
+   /* min-height: fit-content; */
+}
+.card {
+    /* border-radius: 0%; */
+    border: 5px solid white;
+    float: left;
+    margin-left: 2%;
+    /* justify-content: space-around; */
+    /* width: 25%; */
+
+}
+.card img{
+    height: 250px;
+}
+.card-body p{
+    height: fit-content;
+    display: none;
+}
+.card:hover{
+    border:5px solid #00DDEB ;
+    background-color: rgb(86, 86, 87);
+    color: white;
+    opacity: 1;
+    
+}
+.card-img-top{
+    opacity: 0.6;
+}
+/* -----------------cards------------------- */
+
+/* <!-- ---------------------bottom icon---------------------- --> */
+
+
+#bottomicon{
+    padding-top: 10%;
+    margin-top: 30%;
+    padding-bottom: 10%;
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(61, 90, 61); */
+    /* opacity: 0.7;  */
+    
+    /* padding-top: 30%; */
+   /* height: fit-content; */
+   background-repeat: no-repeat;
+   background-size: 100% ;
+   height: 100%;
+   min-width: 100%;
+   min-height: 50%;
+   /* position: absolute; */
+   background-image: url("/static/img/bridge.jpg");
+   background-size: cover;
+   
+}
+/* .bluricon{
+    justify-content: center;
+} */
+.iconhead{
+    text-align: center;
+    padding-left: 40%;
+    padding-right: 40%;
+    
+}
+#bottomicon1{
+    /* background-image: url(landscape.webp); */
+    border: solid;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+    justify-content: center;
+
+    
+}
+.cruise{
+    display: flex;
+    float: left;
+    /* display: block;
+    float: left; */
+    
+}
+.cruise p{
+    
+    /* left: 0; */
+    /* margin-left: -50% ; */
+    font-size: large;
+    font-weight: bold;
+    /* display: flex;
+    float: left; */
+} 
+/* .honeymoon{
+    margin-top: 2%;
+    margin-left: -55%;
+    margin-bottom: 30px;
+} */
+/* .adventure{
+    padding-top: -140px;
+} */
+/* .bluricon{
+    display: flex;
+    float: left;
+} */
+
+ /*#iconcap{
+    display: flex;
+    float: left;
+    background-color:  rgb(61, 90, 61);
+    margin-left: 5%;
+}
+#cruise{
+    margin-left: 42%;
+    margin-top: 2%;
+}
+#nature{
+    margin-left: 42%;
+    margin-top: 2%;
+}
+#flight{
+    margin-left: 42%;
+    margin-top: 2%;
+}
+#adventure{
+    margin-left: 42%;
+    margin-top: 2%;
+}
+#beach{
+    margin-left: 42%;
+    margin-top: 2%;
+}
+#honeymoon{
+    margin-left: 42%;
+    margin-top: 2%;
+} */
+
+
+/* .bluricon{
+} */
+/* <!-- ---------------------bottom icon---------------------- --> */
+/* #comment{
+    display: flex;
+    float: left;
+} */
+/* -------------------comment------------------------------ */
+
+
+#megbox{
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 4%;
+    display: flex;
+    float: left;
+}
+#megbox div:hover{
+    border-top: solid rgb(20, 112, 148);
+    border-radius: 40px;
+
+}
+.bubble {
+    margin-left: 5px;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  background: skyblue;
+  border-radius: 40px;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid skyblue;
+  border-right: 12px solid transparent;
+  border-top: 12px solid skyblue;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -24px;
+}
+
+
+
+
+
+/* -------------------comment------------------------------ */
+
+/* ---------------------footer---------------------- */
+
+#footer{
+    display: flex;
+    float: left;
+    background-color: rgb(101, 138, 165);
+    color: white;
+    border-bottom: solid #f8f8f8;
+}
+#footer1{
+    width: 15%;
+    margin-left: 10%;
+}
+#footer h4{
+    color: aqua;
+}
+#footer img{
+    width: 25px;
+    height: 25px;
+}
+/* #footer2 img,p{
+    display: flex;
+    float: left;
+} */
+#footer2{
+    width: 15%;
+    margin-left: 7%;
+}
+#footer3{
+    width: 15%;
+    margin-left: 7%;
+}
+#footer3 span{
+    border: solid #fff;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    display: inline-block;
+    /* min-width: 20px; */
+    padding-left: 2px;
+    padding-right: 2px;
+}
+#footer4{
+    width: 15%;
+    margin-left: 7%;
+    
+}
+#footer4 span{
+    color: #00DDEB;
+}
+#footer p{
+    margin-bottom: 2px;
+}
+#footer4icon ul{
+    overflow: hidden;
+    flex-direction: row;
+    margin-top: -25px;
+}
+#footer4icon li{
+    float: left;
+   
+}
+#footer4icon li a{
+    display: inline;
+    min-width: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* ---------------------footer---------------------- */
+
+
+/* -----------------------footer2---------------------- */
+
+#footer5 {
+    
+    /* height: 5%; */
+    text-align: center;
+    /* background-color: rgb(6, 212, 202); */
+    background-color: rgb(101, 138, 165);
+}
+#footer5 span,#p{
+    color: #fff;
+}
+/* -----------------------footer2---------------------- */
+

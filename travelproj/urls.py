@@ -20,6 +20,7 @@ from travelapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('reg/',views.reg),
+    path('login/',views.login),
+     path('register/',views.register),
     path('home/',views.home,name='home'),
 ]

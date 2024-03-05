@@ -32,11 +32,12 @@
     height: 350px;
     width: 350px;
     padding: 50px;
-    margin-left: 10%;
+    margin-left: 50%;
     border-radius: 10px;
+    /* opacity: 0.5; */
     /* box-shadow: 0px 0px 7px 0px #1070be; */
     
-    background-color: rgb(155, 147, 147);
+    background-color: rgba(155, 147, 147,0.3);
    
     /* opacity: 0.4; */ 
 /* 
@@ -75,7 +76,7 @@
 #bodydiv{
     font-size: large;
     margin-top: 10%;
-    margin-left: 50%;
+    margin-left: 5%;
     /* margin-right: 0; */
     /* float: left; */
 }
@@ -95,4 +96,15 @@
 }
 #logreg{
     text-decoration: none;
+    color: rgb(19, 20, 20);
 }
+.h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+#gbtn{
+    background-color: rgba(2, 176, 230,.2);
+    padding: 2px;
+}
+#gbtn:hover{
+    background-color: rgba(2, 176, 230,.6);}
