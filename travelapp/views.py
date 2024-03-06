@@ -33,4 +33,4 @@ def register(request):
             
     else:
         form = TravelForm()
-    return render(request,'login.html',{'form':form})
+    return render(request,'register.html',{'form':form})

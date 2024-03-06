@@ -3,56 +3,7 @@
     background-color: rgb(26, 26, 65);
 } */
 
-/* ----------navbar---------- */
 
-#navdiv{
-    
-    background-color: rgb(26, 26, 65);
-   
-    margin-top: -10px;
-    padding-left: 2%;
-}
-#navdiv a{
-    color: white;
-    
-}
-#navdiv button{
-    color: white;
-    background-color: white;
-}
-
-/* ----------navbar---------- */
-
-/* ----------navbar2---------- */
-
-
-#socialmedia{
-    padding-left: 20%;
-}
-#secondnov{
-    padding-left: 25%;
-}
-#firstsearch input{
-    height: 35px;
-    width: 100px;
-    margin-bottom: 20px;
-}
-#firstsearch button{
-    height: 40px;
-    width: 100px;
-    margin-left: 10px;
-    margin-top: 12px;
-    
-    
-}
-#voyage{
-    padding-left: 10%;
-    font-weight: bolder;
-    font-size: xx-large;
-    
-}
-
-/* ----------navbar2---------- */
 
 /* ----------image sliding---------- */
 
