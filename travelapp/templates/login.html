@@ -1,6 +1,5 @@
 
-{% extends "base.html" %}
-{% load static %}
+{% extends 'master.html' %}
 {% block content %}
 <!DOCTYPE html>
 <html lang="en">
@@ -9,77 +8,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
-    
-<div id="indexbody">
+<body id="indexbody">
+
+  
     
 
-    
-      <div id="bodydiv" class="col-sm-4 ">
-        <h1>"TO <br><span >TRAVEL <br></span> IS TO <br><span>LIVE</span>"</h1>
-    </div>
-      
-      
+
 <div id="formdiv">
+
+    <center><form method="POST" class="post-form"
+    action=" ">
     
-    <form method="POST , GET" class="post-form"
-    action="/home">
     <div class="d-flex align-items-center mb-3 pb-1">
-        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-        <span class="h1 fw-bold mb-0">V<span style="color:rgb(7, 241, 132);">O</span>YAGE</span>
+        
+       
+       
       </div>
     {% csrf_token %}
     <div class="container-fluid ">
-        
-<br>
-        <div class="form-group row" id="reg">
-            <label class="col-sm-1 col-form-label"></label>
-            <div class="col-sm-4"></div>
-         <h3>LOGIN</h3>
-        </div>
-    </div>
-
+        <span class="h1 fw-bold mb-0">V<span style="color: rgb(7, 241, 132);">O</span>YAGE</span><br><br>
+    <h3>LOGIN</h3>
+    <br>
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label">Your Name: </label><br>
+        <label class="col-sm-2 col-form-label">Your Name: </label>
         <div class="col-sm-4" >
             {{ form.username }}
         </div>
     </div>
-
    
 
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label">Password: </label><br>
+        <label class="col-sm-2 col-form-label">Password: </label>
         <div class="col-sm-4 col-lg-2" id="desbox">
             {{ form.password }}
         </div><br>
     </div>
     <div class="form-group row">
-        <label class="col-sm-1 col-form-label"></label>
-        <div class="col-sm-4">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </div>
-    <br>
+       
+        <div class="col-sm-2" id="btnid">
+            <center><button  class="btn btn-primary">Submit</button></center>
+    </div><br>
     <div>
         <p>Don't have an account ?</p>
         <a id="logreg" href="/register">Register</a>
+        
     </div>
     <div><br>
-    <button class="btn btn-lg btn-block btn-primary" id="gbtn"
-    type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
+    {% comment %} <button class="btn btn-lg btn-block btn-primary" style="background-color: #39b7dd;" id="gbtn"
+    ><i class="fab fa-google me-2"></i> Sign in with google</button> {% endcomment %}
     </div>
 
 
-    </form>
-    
+    </form></center>
+
 </div>
+<!-- <center> <div id="bodydiv" class="col-sm-4 ">
+    <h1>"TO <br><span >TRAVEL <br></span> IS TO <br><span>LIVE</span>"</h1>
+</div></center> -->
+<!-- <div id="bodydiv" class="col-sm-2 ">
+    <h1>"TO <br><span >TRAVEL <br></span> IS TO <br><span>LIVE</span>"</h1>
+</div> -->
 
     <script src="{% static 'js/show.js' %}"></script>
-    
-</div>
+
 </body>
 </html>
 {% endblock %}

@@ -1,0 +1,47 @@
+#bookform{
+    border: solid black 2px;
+    width: 35%;
+    height:auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 30px;
+    
+    
+}
+body{
+    background-color: rgb(226, 235, 235);
+    
+} 
+#bookformlabel input{
+    width: 150px;
+    margin-bottom: 20px;
+    /* padding: 10px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* background-color: blue; */
+   
+}
+#id_location{
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+#id_destination{
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form-group label{
+    width: 100%;
+}

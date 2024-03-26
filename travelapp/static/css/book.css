@@ -32,6 +32,7 @@ body{
 .form-group{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
     /* margin-bottom: 10px; */
 }
 .col-sm-2{
@@ -44,8 +45,25 @@ body{
     color: black;
     background-color: white;
     
-    /* margin-left: 50px; */
+  
 }
 #btnid{
-    margin-left: 50px;
+    /* margin-left: 20%; */
+    align-self: center;
+}
+input{
+    width: 200px;
+    height: 25px;
+}
+#id_destination{
+    width: 200px;
+}
+#id_location{
+    width: 200px;
+
+}
+.grid-fluid{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap:20px 50px;
 }
